@@ -24,21 +24,32 @@ A high-performance full-stack analytics dashboard built to handle heavy metric c
    git clone [https://github.com/yourusername/kpi-dashboard.git](https://github.com/yourusername/kpi-dashboard.git)
    cd kpi-dashboard
    ```
+
 ## Install dependencies:
+
 cd backend && npm install
 cd ../frontend && npm install
 
 ## Configure Environment Variables:
+
 ### Create a .env file in the backend directory
+
 PORT=your_port
+
 MONGO_URI=your_mongo_uri
+
 REDIS_URL=your_upstash_redis_url
 
 ## Seed the Database & Run:
-cd backend
-node seed.js
-npm run dev
 
-In a new terminal:
-cd frontend
-npm run dev
+### cd backend
+
+ => node seed.js
+
+ => npm run dev
+
+### In a new terminal:
+
+ => cd frontend
+
+ => npm run dev
